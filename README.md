@@ -1,7 +1,7 @@
 # test-heroku-cron
 Testing [heroku cronjobs](https://devcenter.heroku.com/articles/scheduler)  
 
-# Cron Setup  
+## Cron Setup  
 
 1. Create the app  
 
