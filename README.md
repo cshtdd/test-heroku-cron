@@ -56,3 +56,7 @@ Ship the logs to S3 using [Flydata](https://elements.heroku.com/addons/flydata)
     ```
 
 7. Configure the bucket name  
+
+### Loggly setup  
+Additionally the logs can be sent to Loggly  
+
