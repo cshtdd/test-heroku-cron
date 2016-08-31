@@ -1,7 +1,7 @@
 # test-heroku-cron
 Testing [heroku cronjobs](https://devcenter.heroku.com/articles/scheduler)  
 
-# Setup
+# Cron Setup  
 
 1. Create the app  
 
@@ -30,3 +30,29 @@ Testing [heroku cronjobs](https://devcenter.heroku.com/articles/scheduler)
     ```sh
         heroku logs --app test-heroku-cron --ps scheduler
     ```
+
+## Logs Setup  
+
+Ship the logs to S3 using [Flydata](https://elements.heroku.com/addons/flydata)  
+
+1. Install the `flydata` addon  
+
+    ```sh
+        heroku addons:create flydata:feather --app test-heroku-cron
+    ```
+
+2. Create the `test-heroku-cron-logs` S3 bucket  
+
+4. Configure the permissions on the bucket  
+
+    ![Bucket Permission Setup](https://heroku.flydata.co/assets/flydata/s3_diagram_en.png)  
+
+5. Configure the bucket Lifecycle  
+
+6. Open the Flydata GUI  
+
+    ```sh
+        heroku addons:open flydata:feather
+    ```
+
+7. Configure the bucket name  
