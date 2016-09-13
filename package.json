@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "aws-cloudwatch-forwarder": "^1.0.0"
+  },
+  "engines": {
+    "node": "5.5.0"
   }
 }
