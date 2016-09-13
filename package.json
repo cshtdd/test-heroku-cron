@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./node_modules/.bin/aws-cloudwatch-forwarder 'node web.js'",
+    "start": "node web.js",
     "worker": "node ./node_modules/.bin/aws-cloudwatch-forwarder 'node main.js'"
   },
   "dependencies": {
