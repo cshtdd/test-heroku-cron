@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "aws-cloudwatch-forwarder 'node web.js'",
-    "worker": "node ./node_modules/.bin/aws-cloudwatch-forwarder 'node main.js'"
+    "worker": "aws-cloudwatch-forwarder 'node main.js'"
   },
   "dependencies": {
     "aws-cloudwatch-forwarder": "^1.0.1"
