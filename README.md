@@ -23,7 +23,7 @@ Testing [heroku cronjobs](https://devcenter.heroku.com/articles/scheduler)
         heroku addons:open scheduler
     ```
 
-5. Create a new job with the following command `npm start`  
+5. Create a new job with the following command `npm run worker`  
 
 6. Check the task logs  
 
